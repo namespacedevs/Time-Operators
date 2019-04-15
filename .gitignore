@@ -1,3 +1,9 @@
 .idea/*
 *.pyc
 .gitignore
+dist
+.egg*
+build
+time_operators.egg-info
+
+\.idea/

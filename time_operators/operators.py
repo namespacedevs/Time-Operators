@@ -125,11 +125,6 @@ class TimeZoneChecker:  # TODO: remove static method
         init = datetime(year=now.year, month=now.month, day=now.day, hour=6)
         end = datetime(year=now.year, month=now.month, day=now.day, hour=21)
 
-        init = TimeFormater.sum_timezone(init, timezone)
-        end = TimeFormater.sum_timezone(end, timezone)
-
-        init = init.time_delay
-        end = end.time_delay
         if init <= now < end:
             return True
         else:
